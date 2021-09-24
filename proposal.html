@@ -6,8 +6,102 @@
         <meta charset="UTF-8">
         <meta name="description" content="Project Proposal for CS484 UIC">
         <meta name="author" content="Yashashvi Dave">
-        <style></style>
+        <style>
+            body {
+                margin: auto;
+                margin-left: 10%;
+                margin-right: 10%;
+                width: 80%;
+                font-family: arial;
+                text-align: center;
+            }
+            header {
+                /*width: 100%;*/
+                clear: both;
+                margin: 1%;
+            }
+            footer {
+                clear: both;
+                margin: 1%;
+                /*width: 100%;*/
+            }
+            .header_box {
+                /*width: 100%;*/
+                background-color: lightgray;
+                height: 100px;
+                padding: 1%;
+            }
+            .middle_container {
+                clear: both;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                height: 400px;
+                /*width: 100%;*/
+            }
+            .middle_box {
+                /*margin: 10%;*/
+                float: left;
+                background-color: lightgray;
+                margin: 1%;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 300px;
+                padding: 1%;
+            }
+            .footer_container {
+                background-color: lightgray;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                height: 200px;
+            }
+            .footer_box {
+                background-color: #00000026;
+                margin: 1%;
+                float: left;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 200px;
+                padding: 1%;
+            }
+            
+
+
+        </style>
     </head>
     <body>
+        <header>
+            <div class='header_box'>
+                <b>Header Box 1</b>
+            </div>
+        </header>
+        <div class='middle_container'>
+            <div class='middle_box'>
+                <b>Middle Box 1</b><br>
+                Answer questions here
+            </div>
+            <div class='middle_box'>
+                <b>Middle Box 2</b><br>
+                Answer questions here
+            </div>
+        </div>
+        <footer>
+            <div class='footer_container'>
+                <div class='footer_box'>
+                    <b>Footer Box 1</b><br>
+                    Answer questions here
+                </div>
+                <div class='footer_box'>
+                    <b>Footer Box 2</b><br>
+                    Answer questions here
+                </div>
+                <div class='footer_box'>
+                    <b>Footer Box 3</b><br>
+                    Answer questions here
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
