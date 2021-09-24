@@ -5,3 +5,5 @@
 - **Team Members**: Yashashvi Dave (ydave4@uic.edu)
 
 
+## Development
+`master` branch is deployed at GitHub Pages. `dev` branch is created for development purposes.
