@@ -31,7 +31,7 @@
                 padding: 1%;
                 top: 50%;
 				text-align: center;
-				font-size: large;
+				/*font-size: large;*/
             }
             .middle_container {
                 clear: both;
@@ -95,9 +95,23 @@
                     background-color: #ffee00;
                 }
             }
+            button {
+                border: 1px solid black;
+                padding: 15px 32px;
+            }
 
 
         </style>
+        <script>
+            var sizes = ['xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large']
+            function increase_font() {
+                document.body.style.fontSize = "larger";
+            }
+            function decrease_font() {
+                document.body.style.fontSize = "smaller";
+
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -153,10 +167,9 @@
                 </div>
                 <div class='footer_box'>
                     <b>Accessibility  Implementation</b>
-					<ul>
-					<li>Provide alt-text for images</li>
-					<li>Try to make it accessible via keyboard-only option</li>
-					</ul>
+                    <p>Adjust font size</p>
+                    <button type='button' onclick="increase_font()" id='increase_font'>+</button>
+                    <button type='button' onclick="decrease_font()" id='decrease_font'>-</button>
                 </div>
             </div>
         </footer>
